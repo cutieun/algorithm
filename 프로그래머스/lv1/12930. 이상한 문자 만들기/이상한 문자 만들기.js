@@ -1,7 +1,8 @@
 function solution(s) {
+    // s='try hello   world';
     let answer = '';
     let words = s.split(" ");
-    
+    console.log(words);
     for(let i=0; i<words.length; i++){
         for(let j=0; j<words[i].length; j++){
             if(j%2==0){
@@ -14,5 +15,6 @@ function solution(s) {
           answer += " ";
         }
     }
+    console.log(answer);
     return answer;
 }
