@@ -1,8 +1,7 @@
 function solution(s) {
-    // s='try hello   world';
     let answer = '';
     let words = s.split(" ");
-    console.log(words);
+
     for(let i=0; i<words.length; i++){
         for(let j=0; j<words[i].length; j++){
             if(j%2==0){
@@ -11,10 +10,8 @@ function solution(s) {
                 answer += words[i][j].toLowerCase();
             }
         }
-        if (i < words.length - 1) {
-          answer += " ";
-        }
+        answer += " ";
     }
-    console.log(answer);
-    return answer;
+    
+    return answer.slice(0,answer.length-1);
 }
