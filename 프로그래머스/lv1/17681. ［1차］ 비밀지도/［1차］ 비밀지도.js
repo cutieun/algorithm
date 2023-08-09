@@ -8,6 +8,16 @@ function solution(n, arr1, arr2) {
             .replaceAll('1','#')
             .replaceAll('0',' '));
     }
+    
+    // map 써보기
+    arr1.map((v, i) => {
+        console.log(
+        (v|arr2[i])
+            .toString(2)
+            .padStart(n, 0)
+            .replaceAll('1','#')
+            .replaceAll('0',' '));
+    })
 
     return answer;
 }
